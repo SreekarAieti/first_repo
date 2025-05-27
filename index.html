@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Test Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.13);
+            padding: 40px 32px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 24px;
+        }
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 42px;
+            color: #fff;
+            font-weight: 700;
+        }
+        .header-info h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .header-info span {
+            color: #666;
+            font-size: 1.1em;
+        }
+        .section {
+            margin-top: 36px;
+        }
+        .section-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 16px;
+            border-left: 4px solid #764ba2;
+            padding-left: 12px;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 12px;
+        }
+        .tech-card {
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            color: #222;
+            border-radius: 12px;
+            padding: 16px 24px;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(122, 122, 122, 0.06);
+            font-size: 1.08em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.2s;
+        }
+        .tech-card:hover {
+            transform: translateY(-4px) scale(1.06);
+            box-shadow: 0 6px 24px rgba(122,122,122,0.17);
+        }
+        .exp-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .exp-list li {
+            margin-bottom: 12px;
+            background: #f2f4f8;
+            border-left: 4px solid #667eea;
+            border-radius: 8px;
+            padding: 14px 18px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .project-card {
+            background: #f9fafc;
+            border: 1px solid #eaeaea;
+            border-radius: 10px;
+            padding: 17px 20px;
+            min-width: 240px;
+            box-shadow: 0 2px 8px rgba(31,38,135,0.03);
+            transition: box-shadow 0.2s;
+        }
+        .project-card:hover {
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.14);
+        }
+        .footer {
+            margin-top: 36px;
+            text-align: center;
+            font-size: 1em;
+            color: #888;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 12px 5vw;
+            }
+            .header {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+            .tech-stack {
+                flex-direction: column;
+            }
+            .projects {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">SA</div>
+            <div class="header-info">
+                <h1>Sreekar Aieti</h1>
+                <span>Backend & Full Stack Developer | 3 Years Experience</span>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Tech Stack</div>
+            <div class="tech-stack">
+                <div class="tech-card">Java <span>Spring Boot</span></div>
+                <div class="tech-card">Couchbase</div>
+                <div class="tech-card">Python</div>
+                <div class="tech-card">Maven</div>
+                <div class="tech-card"><span style="font-size:1.2em;">&#128187;</span> GitHub Copilot</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Experience</div>
+            <ul class="exp-list">
+                <li><b>3+ years</b> developing robust web-based applications using Java Spring Boot and Python.</li>
+                <li>Designed and implemented RESTful APIs, authentication, and scalable backend systems.</li>
+                <li>Integrated Couchbase as a NoSQL backend for high-performance data handling.</li>
+                <li>Automated builds and dependency management using Maven.</li>
+                <li>Utilized GitHub Copilot for rapid prototyping and code generation.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="section-title">Projects</div>
+            <div class="projects">
+                <div class="project-card">
+                    <b>Enterprise Dashboard</b><br>
+                    Built a real-time analytics dashboard for monitoring business KPIs, using Spring Boot and Couchbase.
+                </div>
+                <div class="project-card">
+                    <b>E-commerce Platform</b><br>
+                    Engineered backend APIs for order management and payment processing with Python and Maven.
+                </div>
+                <div class="project-card">
+                    <b>Smart Automation Suite</b><br>
+                    Developed automation tools for workflow optimization, leveraging GitHub Copilot for code generation and rapid testing.
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            &copy; 2025 Sreekar Aieti. Crafted with &#10084;&#65039; and code.
+        </div>
+    </div>
+</body>
+</html>
